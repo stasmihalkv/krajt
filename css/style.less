@@ -279,25 +279,37 @@ hr{
             display: inline-block;
             margin-right: 30px;
             padding: 15px 0 40px 0px;
-            @media @small{
-                padding: 10px 0 20px 0px;
-            }
             width: 22%;
             @media @small{
+                padding: 10px 0 20px 0px;
                 margin-right: 30px;
                 width: 30%; 
                 margin-bottom: 15px;
             } 
+            &:hover>.section_5__item-img{
+                background: @gradientBg;
+            
+            }
             .section_5__item-img{
-                margin: 20px 0 40px;
-                @media @small{
-                margin: 10px 0 15px;
-                } 
-                img{
-                    width: 100%;
+                margin-top: 20px;
+                max-width: 263px;
+                height: 250px;
+                background: white;
+                padding-top: 10%;
+                @media @medium{
+                 padding-top: 15%; 
                 }
+                clip-path: polygon(0% 0%, 100% 0, 100% 28%, 50% 44%, 0 25%);
+                
+                &:hover{
+                    background: @gradientBg;
+                }
+                img{
+                    width: 40%
+                };   
             }
             .section_5__item-list{
+                margin-top: -80px;
                 margin-bottom: 50px;
                 @media @small{
                 margin-bottom: 30px;
